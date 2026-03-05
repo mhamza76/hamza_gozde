@@ -1,0 +1,1245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Muhammad Hamza - Professional Full Stacck Developer specializing in modern web applications, ERP systems, and UI/UX design.">
+    <meta name="keywords" content="Front-End Developer, Web Developer, ERP Systems, Muhammad Hamza, Portfolio">
+    <title>Muhammad Hamza | Full stackDeveloper & ERP Specialist</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="dark">
+    <!-- Premium Loading Screen -->
+    <div class="premium-loader" id="premium-loader">
+        <div class="loader-content">
+            <div class="loader-ring">
+                <div class="ring-segment"></div>
+                <div class="ring-segment"></div>
+                <div class="ring-segment"></div>
+            </div>
+            <h2 class="loader-text">Muhammad Hamza</h2>
+            <p class="loader-subtitle">Full Stack Developer</p>
+        </div>
+    </div>
+
+    <!-- Notification Toast -->
+    <div class="notification-toast" id="notification-toast">
+        <div class="toast-icon-wrapper">
+            <svg class="toast-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                <polyline points="22 4 12 14.01 9 11.01" />
+            </svg>
+        </div>
+        <div class="toast-content">
+            <h4 class="toast-title">Success!</h4>
+            <p class="toast-message">Your message has been sent successfully.</p>
+        </div>
+        <button class="toast-close">×</button>
+    </div>
+
+    <!-- Cursor Follower -->
+    <div class="cursor-dot" id="cursor-dot"></div>
+    <div class="cursor-outline" id="cursor-outline"></div>
+
+    <!-- Theme Toggle -->
+    <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle theme">
+        <div class="toggle-track">
+            <svg class="sun-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <circle cx="12" cy="12" r="5" />
+                <line x1="12" y1="1" x2="12" y2="3" />
+                <line x1="12" y1="21" x2="12" y2="23" />
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                <line x1="1" y1="12" x2="3" y2="12" />
+                <line x1="21" y1="12" x2="23" y2="12" />
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+            </svg>
+            <svg class="moon-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+            </svg>
+            <div class="toggle-thumb"></div>
+        </div>
+    </button>
+
+    <!-- Professional Navigation -->
+    <nav class="professional-nav" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-brand">
+                <div class="brand-icon">MH</div>
+                <div class="brand-text">
+                    <span class="brand-name">Muhammad Hamza</span>
+                    <span class="brand-title">Full Stack Developer</span>
+                </div>
+            </a>
+
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-item active">Home</a>
+                <a href="#about" class="nav-item">About</a>
+                <a href="#services" class="nav-item">Services</a>
+                <a href="#projects" class="nav-item">Portfolio</a>
+                <a href="#testimonials" class="nav-item">Testimonials</a>
+                <a href="#contact" class="nav-item">Contact</a>
+            </div>
+
+            <div class="nav-actions">
+                <a href="#contact" class="btn-hire">
+                    <span>Hire Me</span>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                </a>
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle menu">
+                    <span class="toggle-line"></span>
+                    <span class="toggle-line"></span>
+                    <span class="toggle-line"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Navigation Overlay -->
+    <div class="mobile-nav-overlay" id="mobile-nav-overlay">
+        <div class="mobile-nav-content">
+            <button class="mobile-close" id="mobile-close">×</button>
+            <div class="mobile-brand">
+                <h2>Muhammad Hamza</h2>
+                <p>Full Stack Developer</p>
+            </div>
+            <nav class="mobile-links">
+                <a href="#home" class="mobile-link">Home</a>
+                <a href="#about" class="mobile-link">About</a>
+                <a href="#services" class="mobile-link">Services</a>
+                <a href="#projects" class="mobile-link">Portfolio</a>
+                <a href="#testimonials" class="mobile-link">Testimonials</a>
+                <a href="#contact" class="mobile-link">Contact</a>
+            </nav>
+            <div class="mobile-cta">
+                <a href="#contact" class="btn-primary-mobile">Let's Talk</a>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <!-- Premium Hero Section -->
+        <section class="premium-hero" id="home">
+            <!-- Animated Background -->
+            <div class="hero-background">
+                <div class="gradient-orb orb-1"></div>
+                <div class="gradient-orb orb-2"></div>
+                <div class="gradient-orb orb-3"></div>
+                <div class="grid-overlay"></div>
+            </div>
+
+            <div class="hero-container">
+                <div class="hero-content-wrapper">
+                    <div class="hero-badge">
+                        <span class="status-dot"></span>
+                        <span>Available for Freelance</span>
+                    </div>
+
+                    <h1 class="hero-headline">
+                        <span class="hero-greeting">Hello, I'm</span>
+                        <span class="hero-name">Muhammad Hamza</span>
+                        <span class="hero-tagline">
+                            <span class="gradient-text">Full Stack Developer</span> &
+                            <span class="typing-cursor">ERP Specialist</span>
+                        </span>
+                    </h1>
+
+                    <p class="hero-description">
+                        Transforming complex business requirements into elegant, scalable web solutions.
+                        Specialized in enterprise systems, modern JavaScript frameworks, and creating
+                        exceptional user experiences.
+                    </p>
+
+                    <div class="hero-cta-group">
+                        <a href="#projects" class="btn-primary-large">
+                            <span>View My Work</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                        <a href="#contact" class="btn-secondary-large">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <polyline points="22,6 12,13 2,6" />
+                            </svg>
+                            <span>Let's Connect</span>
+                        </a>
+                    </div>
+
+                    <!-- Hero Stats -->
+                    <div class="hero-stats">
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                                    <polyline points="22 4 12 14.01 9 11.01" />
+                                </svg>
+                            </div>
+                            <div class="stat-content">
+                                <h3 class="stat-number"><span class="counter" data-target="15">0</span>+</h3>
+                                <p class="stat-label">Projects Completed</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                                    <circle cx="9" cy="7" r="4" />
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                                </svg>
+                            </div>
+                            <div class="stat-content">
+                                <h3 class="stat-number"><span class="counter" data-target="10">0</span>+</h3>
+                                <p class="stat-label">Happy Clients</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+                                </svg>
+                            </div>
+                            <div class="stat-content">
+                                <h3 class="stat-number"><span class="counter" data-target="3">0</span>+</h3>
+                                <p class="stat-label">Years Experience</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Image with 3D Effect -->
+                <div class="hero-visual">
+                    <div class="visual-card">
+                        <div class="code-preview">
+                            <div class="code-header">
+                                <span class="dot dot-red"></span>
+                                <span class="dot dot-yellow"></span>
+                                <span class="dot dot-green"></span>
+                            </div>
+                            <div class="code-content">
+                                <div class="code-line"><span class="code-keyword">const</span> <span
+                                        class="code-var">developer</span> = {</div>
+                                <div class="code-line indent">name: <span class="code-string">'Muhammad Hamza'</span>,
+                                </div>
+                                <div class="code-line indent">skills: [<span class="code-string">'React'</span>, <span
+                                        class="code-string">'JavaScript'</span>, <span
+                                        class="code-string">'Python'</span>],</div>
+                                <div class="code-line indent">passion: <span class="code-string">'Building Amazing
+                                        Products'</span></div>
+                                <div class="code-line">};</div>
+                            </div>
+                        </div>
+                        <div class="floating-badges">
+                            <div class="tech-badge badge-1">HTML5</div>
+                            <div class="tech-badge badge-2">CSS3</div>
+                            <div class="tech-badge badge-3">React</div>
+                            <div class="tech-badge badge-4">Python(Django)</div>
+                            <div calss="tech-badge badge-5">PHP</div>
+                            <div calss="tech-badge badge-5">Node.js</div>
+                            <div calss="tech-badge badge-5">c#</div>
+                            <div calss="tech-badge badge-5">SQL</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scroll Indicator -->
+            <div class="scroll-indicator">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <p>Scroll Down</p>
+            </div>
+        </section>
+
+        <!-- About Section - Premium Design -->
+        <section class="premium-about" id="about">
+            <div class="about-container">
+                <div class="about-content-grid">
+                    <!-- Left: Image & Experience -->
+                    <div class="about-left">
+                        <div class="about-image-wrapper">
+                            <div class="image-background"></div>
+                            <div class="experience-badge">
+                                <h3>3+</h3>
+                                <p>Years of<br>Experience</p>
+                            </div>
+                        </div>
+
+                        <!-- Quick Facts -->
+                        <div class="quick-facts">
+                            <div class="fact-item">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                                    <path d="M6 12v5c3 3 9 3 12 0v-5" />
+                                </svg>
+                                <span>Superior University</span>
+                            </div>
+                            <div class="fact-item">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                    <circle cx="12" cy="10" r="3" />
+                                </svg>
+                                <span>Faisalabad, Pakistan</span>
+                            </div>
+                            <div class="fact-item">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <polyline points="12 6 12 12 16 14" />
+                                </svg>
+                                <span>Available for Projects</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Content -->
+                    <div class="about-right">
+                        <div class="section-label-wrapper">
+                            <span class="section-number">01</span>
+                            <span class="section-label">About Me</span>
+                        </div>
+                        <h2 class="section-heading">
+                            Crafting Digital Solutions with
+                            <span class="gradient-text">Precision & Passion</span>
+                        </h2>
+                        <p class="section-text">
+                            I'm a dedicated full stack developer with a strong foundation in creating responsive,
+                            user-centric web applications. My expertise spans from modern JavaScript frameworks
+                            to enterprise-level ERP system deployments.
+                        </p>
+                        <p class="section-text">
+                            With hands-on experience in <strong>ERPNext and BlueSeer implementations</strong>,
+                            I've successfully delivered custom modules, integrated complex workflows, and trained
+                            teams to maximize system efficiency. My approach combines technical excellence with
+                            strategic business understanding.
+                        </p>
+
+                        <!-- Skills Progress Bars -->
+                        <div class="skills-premium">
+                            <div class="skill-premium-item">
+                                <div class="skill-header-premium">
+                                    <span class="skill-name-premium">Full stack Development</span>
+                                    <span class="skill-percentage">95%</span>
+                                </div>
+                                <div class="skill-bar-premium">
+                                    <div class="skill-fill-premium" data-width="95"></div>
+                                </div>
+                            </div>
+                            <div class="skill-premium-item">
+                                <div class="skill-header-premium">
+                                    <span class="skill-name-premium">ERP Systems (ERPNext/BlueSeer)</span>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                                <div class="skill-bar-premium">
+                                    <div class="skill-fill-premium" data-width="90"></div>
+                                </div>
+                            </div>
+                            <div class="skill-premium-item">
+                                <div class="skill-header-premium">
+                                    <span class="skill-name-premium">UI/UX Design</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-bar-premium">
+                                    <div class="skill-fill-premium" data-width="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-premium-item">
+                                <div class="skill-header-premium">
+                                    <span class="skill-name-premium">Python & JavaScript</span>
+                                    <span class="skill-percentage">88%</span>
+                                </div>
+                                <div class="skill-bar-premium">
+                                    <div class="skill-fill-premium" data-width="88"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="about-cta-group">
+                            <a href="#contact" class="btn-primary-medium">
+                                <span>Let's Talk</span>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M5 12h14M12 5l7 7-7 7" />
+                                </svg>
+                                <a href="cv.png" class="btn-text-medium" id="download-cv"
+                                    download="Muhammad_Hamza_CV.pdf">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                                        <polyline points="7 10 12 15 17 10" />
+                                        <line x1="12" y1="15" x2="12" y2="3" />
+                                    </svg>
+                                    <span>Download CV</span>
+                                </a>
+                        </div>
+                    </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services-premium" id="services">
+            <div class="services-container">
+                <div class="section-header-center">
+                    <span class="section-number">02</span>
+                    <span class="section-label">Services</span>
+                    <h2 class="section-heading">What I <span class="gradient-text">Offer</span></h2>
+                    <p class="section-description">
+                        Comprehensive web development services tailored to your business needs
+                    </p>
+                </div>
+
+                <div class="services-grid">
+                    <!-- Service 1 -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <polyline points="16 18 22 12 16 6" />
+                                <polyline points="8 6 2 12 8 18" />
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Web Development</h3>
+                        <p class="service-description">
+                            Building responsive, modern websites with clean code and best practices using HTML, CSS,
+                            JavaScript,c#,python,SQL,and React.
+                        </p>
+                        <ul class="service-features">
+                            <li>Responsive Design</li>
+                            <li>Performance Optimization</li>
+                            <li>Cross-Browser Compatible</li>
+                        </ul>
+                        <div class="service-number">01</div>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="service-card featured-service">
+                        <div class="featured-badge">Most Popular</div>
+                        <div class="service-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <ellipse cx="12" cy="5" rx="9" ry="3" />
+                                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" />
+                                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
+                            </svg>
+                        </div>
+                        <h3 class="service-title">ERP Solutions</h3>
+                        <p class="service-description">
+                            Expert deployment and customization of ERPNext and BlueSeer systems for seamless business
+                            operations.
+                        </p>
+                        <ul class="service-features">
+                            <li>Custom Module Development</li>
+                            <li>System Integration</li>
+                            <li>Training & Support</li>
+                        </ul>
+                        <div class="service-number">02</div>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                                <line x1="8" y1="21" x2="16" y2="21" />
+                                <line x1="12" y1="17" x2="12" y2="21" />
+                            </svg>
+                        </div>
+                        <h3 class="service-title">UI/UX Design</h3>
+                        <p class="service-description">
+                            Creating intuitive, beautiful interfaces that enhance user experience and drive engagement.
+                        </p>
+                        <ul class="service-features">
+                            <li>User Research</li>
+                            <li>Wireframing & Prototyping</li>
+                            <li>Visual Design</li>
+                        </ul>
+                        <div class="service-number">03</div>
+                    </div>
+
+                    <!-- Service 4 -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Consultation</h3>
+                        <p class="service-description">
+                            Strategic guidance on technology stack, architecture, and best practices for your project.
+                        </p>
+                        <ul class="service-features">
+                            <li>Technical Strategy</li>
+                            <li>Code Review</li>
+                            <li>Performance Audit</li>
+                        </ul>
+                        <div class="service-number">04</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Premium Projects Section -->
+        <section class="projects-premium" id="projects">
+            <div class="projects-container">
+                <div class="section-header-center">
+                    <span class="section-number">03</span>
+                    <span class="section-label">Portfolio</span>
+                    <h2 class="section-heading">Featured <span class="gradient-text">Projects</span></h2>
+                    <p class="section-description">
+                        Explore my recent work and creative solutions
+                    </p>
+                </div>
+
+                <!-- Premium Filter Tabs -->
+                <div class="filter-tabs-premium">
+                    <button class="filter-tab active" data-filter="all">
+                        <span>All Projects</span>
+                        <span class="tab-indicator"></span>
+                    </button>
+                    <button class="filter-tab" data-filter="featured">
+                        <span>Featured</span>
+                        <span class="tab-indicator"></span>
+                    </button>
+                    <button class="filter-tab" data-filter="enterprise">
+                        <span>Enterprise</span>
+                        <span class="tab-indicator"></span>
+                    </button>
+                    <button class="filter-tab" data-filter="web-app">
+                        <span>Web Apps</span>
+                        <span class="tab-indicator"></span>
+                    </button>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="projects-grid-premium">
+                    <!-- Project 1 - Featured ERP -->
+                    <div class="project-card-premium featured" data-category="featured enterprise" data-project="1">
+                        <div class="project-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1758411898021-ef0dadaaa295?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+                                alt="ERPNext & BlueSeer Deployment" loading="lazy">
+                            <div class="project-overlay-gradient"></div>
+                            <div class="featured-star">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="project-content-wrapper">
+                            <div class="project-meta">
+                                <span class="project-category-badge">Enterprise ERP</span>
+                                <span class="project-year">2024</span>
+                            </div>
+                            <h3 class="project-title-premium">ERPNext & BlueSeer Deployment</h3>
+                            <p class="project-excerpt">
+                                Complete enterprise resource planning system with custom inventory, financial reporting,
+                                and procurement modules.
+                            </p>
+                            <div class="project-tech-stack">
+                                <span class="tech-item">Python</span>
+                                <span class="tech-item">JavaScript</span>
+                                <span class="tech-item">ERPNext</span>
+                                <span class="tech-item">MySQL</span>
+                            </div>
+                            <button class="project-view-btn">
+                                <span>View Case Study</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M5 12h14M12 5l7 7-7 7" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 - Analytics Dashboard -->
+                    <div class="project-card-premium" data-category="web-app" data-project="2">
+                        <div class="project-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1759661966728-4a02e3c6ed91?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+                                alt="Analytics Dashboard" loading="lazy">
+                            <div class="project-overlay-gradient"></div>
+                        </div>
+                        <div class="project-content-wrapper">
+                            <div class="project-meta">
+                                <span class="project-category-badge">Web Application</span>
+                                <span class="project-year">2024</span>
+                            </div>
+                            <h3 class="project-title-premium">Real-Time Analytics Dashboard</h3>
+                            <p class="project-excerpt">
+                                Interactive data visualization platform with real-time KPI tracking and customizable
+                                reports.
+                            </p>
+                            <div class="project-tech-stack">
+                                <span class="tech-item">React</span>
+                                <span class="tech-item">D3.js</span>
+                                <span class="tech-item">Node.js</span>
+                                <span class="tech-item">MongoDB</span>
+                            </div>
+                            <button class="project-view-btn">
+                                <span>View Case Study</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M5 12h14M12 5l7 7-7 7" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 - Business Suite -->
+                    <div class="project-card-premium" data-category="enterprise" data-project="3">
+                        <div class="project-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1770013398722-f3142a8162c1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+                                alt="Business Management Suite" loading="lazy">
+                            <div class="project-overlay-gradient"></div>
+                        </div>
+                        <div class="project-content-wrapper">
+                            <div class="project-meta">
+                                <span class="project-category-badge">Enterprise</span>
+                                <span class="project-year">2023</span>
+                            </div>
+                            <h3 class="project-title-premium">Business Management Suite</h3>
+                            <p class="project-excerpt">
+                                Comprehensive CRM and project management solution with team collaboration tools.
+                            </p>
+                            <div class="project-tech-stack">
+                                <span class="tech-item">Vue.js</span>
+                                <span class="tech-item">Laravel</span>
+                                <span class="tech-item">PostgreSQL</span>
+                            </div>
+                            <button class="project-view-btn">
+                                <span>View Case Study</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M5 12h14M12 5l7 7-7 7" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 - Portfolio -->
+                    <div class="project-card-premium" data-category="web-app" data-project="4">
+                        <div class="project-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1643116774075-acc00caa9a7b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+                                alt="Developer Portfolio" loading="lazy">
+                            <div class="project-overlay-gradient"></div>
+                        </div>
+                        <div class="project-content-wrapper">
+                            <div class="project-meta">
+                                <span class="project-category-badge">Web Design</span>
+                                <span class="project-year">2024</span>
+                            </div>
+                            <h3 class="project-title-premium">Modern Portfolio Template</h3>
+                            <p class="project-excerpt">
+                                Sleek, responsive portfolio with dark mode, smooth animations, and modern design.
+                            </p>
+                            <div class="project-tech-stack">
+                                <span class="tech-item">HTML5</span>
+                                <span class="tech-item">CSS3</span>
+                                <span class="tech-item">JavaScript</span>
+                            </div>
+                            <button class="project-view-btn">
+                                <span>View Case Study</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M5 12h14M12 5l7 7-7 7" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials-premium" id="testimonials">
+            <div class="testimonials-container">
+                <div class="section-header-center">
+                    <span class="section-number">04</span>
+                    <span class="section-label">Testimonials</span>
+                    <h2 class="section-heading">Client <span class="gradient-text">Feedback</span></h2>
+                    <p class="section-description">
+                        What clients say about working with me
+                    </p>
+                </div>
+
+                <div class="testimonials-slider">
+                    <div class="testimonial-track">
+                        <!-- Testimonial 1 -->
+                        <div class="testimonial-card">
+                            <div class="quote-icon">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M6.5 10c-.223 0-.437.034-.65.065.069-.232.14-.468.254-.68.114-.308.292-.575.469-.844.148-.291.409-.488.601-.737.201-.242.475-.403.692-.604.213-.21.492-.315.714-.463.232-.133.434-.28.65-.35l.539-.222.474-.197-.485-1.938-.597.144c-.191.048-.424.104-.689.171-.271.05-.56.187-.882.312-.318.142-.686.238-1.028.466-.344.218-.741.4-1.091.692-.339.301-.748.562-1.05.945-.33.358-.656.734-.909 1.162-.293.408-.492.856-.702 1.299-.19.443-.343.896-.468 1.336-.237.882-.343 1.72-.384 2.437-.034.718-.014 1.315.028 1.747.015.204.043.402.063.539l.025.168.026-.006A4.5 4.5 0 1 0 6.5 10zm11 0c-.223 0-.437.034-.65.065.069-.232.14-.468.254-.68.114-.308.292-.575.469-.844.148-.291.409-.488.601-.737.201-.242.475-.403.692-.604.213-.21.492-.315.714-.463.232-.133.434-.28.65-.35l.539-.222.474-.197-.485-1.938-.597.144c-.191.048-.424.104-.689.171-.271.05-.56.187-.882.312-.317.143-.686.238-1.028.467-.344.218-.741.4-1.091.692-.339.301-.748.562-1.05.944-.33.358-.656.734-.909 1.162-.293.408-.492.856-.702 1.299-.19.443-.343.896-.468 1.336-.237.882-.343 1.72-.384 2.437-.034.718-.014 1.315.028 1.747.015.204.043.402.063.539l.025.168.026-.006A4.5 4.5 0 1 0 17.5 10z" />
+                                </svg>
+                            </div>
+                            <p class="testimonial-text">
+                                "Muhammad delivered an exceptional ERP solution that transformed our business
+                                operations. His expertise in ERPNext and attention to detail exceeded our expectations."
+                            </p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">AM</div>
+                                <div class="author-info">
+                                    <h4 class="author-name">Ahmed Malik</h4>
+                                    <p class="author-role">CEO, Tech Solutions Ltd</p>
+                                </div>
+                            </div>
+                            <div class="testimonial-rating">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 2 -->
+                        <div class="testimonial-card">
+                            <div class="quote-icon">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M6.5 10c-.223 0-.437.034-.65.065.069-.232.14-.468.254-.68.114-.308.292-.575.469-.844.148-.291.409-.488.601-.737.201-.242.475-.403.692-.604.213-.21.492-.315.714-.463.232-.133.434-.28.65-.35l.539-.222.474-.197-.485-1.938-.597.144c-.191.048-.424.104-.689.171-.271.05-.56.187-.882.312-.318.142-.686.238-1.028.466-.344.218-.741.4-1.091.692-.339.301-.748.562-1.05.945-.33.358-.656.734-.909 1.162-.293.408-.492.856-.702 1.299-.19.443-.343.896-.468 1.336-.237.882-.343 1.72-.384 2.437-.034.718-.014 1.315.028 1.747.015.204.043.402.063.539l.025.168.026-.006A4.5 4.5 0 1 0 6.5 10zm11 0c-.223 0-.437.034-.65.065.069-.232.14-.468.254-.68.114-.308.292-.575.469-.844.148-.291.409-.488.601-.737.201-.242.475-.403.692-.604.213-.21.492-.315.714-.463.232-.133.434-.28.65-.35l.539-.222.474-.197-.485-1.938-.597.144c-.191.048-.424.104-.689.171-.271.05-.56.187-.882.312-.317.143-.686.238-1.028.467-.344.218-.741.4-1.091.692-.339.301-.748.562-1.05.944-.33.358-.656.734-.909 1.162-.293.408-.492.856-.702 1.299-.19.443-.343.896-.468 1.336-.237.882-.343 1.72-.384 2.437-.034.718-.014 1.315.028 1.747.015.204.043.402.063.539l.025.168.026-.006A4.5 4.5 0 1 0 17.5 10z" />
+                                </svg>
+                            </div>
+                            <p class="testimonial-text">
+                                "Working with Muhammad was a pleasure. He created a beautiful, responsive website that
+                                perfectly represents our brand. Highly professional and skilled."
+                            </p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">SK</div>
+                                <div class="author-info">
+                                    <h4 class="author-name">Sarah Khan</h4>
+                                    <p class="author-role">Marketing Director, Digital Co</p>
+                                </div>
+                            </div>
+                            <div class="testimonial-rating">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 3 -->
+                        <div class="testimonial-card">
+                            <div class="quote-icon">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M6.5 10c-.223 0-.437.034-.65.065.069-.232.14-.468.254-.68.114-.308.292-.575.469-.844.148-.291.409-.488.601-.737.201-.242.475-.403.692-.604.213-.21.492-.315.714-.463.232-.133.434-.28.65-.35l.539-.222.474-.197-.485-1.938-.597.144c-.191.048-.424.104-.689.171-.271.05-.56.187-.882.312-.318.142-.686.238-1.028.466-.344.218-.741.4-1.091.692-.339.301-.748.562-1.05.945-.33.358-.656.734-.909 1.162-.293.408-.492.856-.702 1.299-.19.443-.343.896-.468 1.336-.237.882-.343 1.72-.384 2.437-.034.718-.014 1.315.028 1.747.015.204.043.402.063.539l.025.168.026-.006A4.5 4.5 0 1 0 6.5 10zm11 0c-.223 0-.437.034-.65.065.069-.232.14-.468.254-.68.114-.308.292-.575.469-.844.148-.291.409-.488.601-.737.201-.242.475-.403.692-.604.213-.21.492-.315.714-.463.232-.133.434-.28.65-.35l.539-.222.474-.197-.485-1.938-.597.144c-.191.048-.424.104-.689.171-.271.05-.56.187-.882.312-.317.143-.686.238-1.028.467-.344.218-.741.4-1.091.692-.339.301-.748.562-1.05.944-.33.358-.656.734-.909 1.162-.293.408-.492.856-.702 1.299-.19.443-.343.896-.468 1.336-.237.882-.343 1.72-.384 2.437-.034.718-.014 1.315.028 1.747.015.204.043.402.063.539l.025.168.026-.006A4.5 4.5 0 1 0 17.5 10z" />
+                                </svg>
+                            </div>
+                            <p class="testimonial-text">
+                                "Incredible technical skills combined with excellent communication. Muhammad understood
+                                our requirements perfectly and delivered beyond expectations."
+                            </p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">RH</div>
+                                <div class="author-info">
+                                    <h4 class="author-name">Raza Hassan</h4>
+                                    <p class="author-role">CTO, StartupHub</p>
+                                </div>
+                            </div>
+                            <div class="testimonial-rating">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slider Controls -->
+                    <button class="slider-control prev" id="testimonial-prev">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M19 12H5M12 19l-7-7 7-7" />
+                        </svg>
+                    </button>
+                    <button class="slider-control next" id="testimonial-next">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Slider Dots -->
+                <div class="slider-dots">
+                    <button class="dot active" data-slide="0"></button>
+                    <button class="dot" data-slide="1"></button>
+                    <button class="dot" data-slide="2"></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Premium Contact Section with Backend -->
+        <section class="contact-premium" id="contact">
+            <div class="contact-container-premium">
+                <div class="contact-left-premium">
+                    <div class="section-label-wrapper">
+                        <span class="section-number">05</span>
+                        <span class="section-label">Contact</span>
+                    </div>
+                    <h2 class="section-heading-large">
+                        Let's Build Something
+                        <span class="gradient-text">Amazing Together</span>
+                    </h2>
+                    <p class="section-text-large">
+                        Have a project in mind? I'm currently available for freelance work and always excited
+                        to discuss new opportunities.
+                    </p>
+
+                    <!-- Contact Cards -->
+                    <div class="contact-cards-grid">
+                        <div class="contact-card-mini">
+                            <div class="card-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                    <polyline points="22,6 12,13 2,6" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>Email</h4>
+                                <p>muhammadhamzaxyz5676@example.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-card-mini">
+                            <div class="card-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+92 3076721558</p>
+                            </div>
+                        </div>
+                        <div class="contact-card-mini">
+                            <div class="card-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                    <circle cx="12" cy="10" r="3" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Faisalabad, Pakistan</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="social-icons-premium">
+
+                        <div class="social-icons-premium">
+
+                            <!-- GitHub -->
+                            <a href="https://github.com/muhammadhamzaxyz5676-code" class="social-icon-premium"
+                                target="_blank" rel="noopener">
+                                <!-- GitHub SVG -->
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 
+            3.37 0 0 0-.94-2.61c3.14-.35 
+            6.44-1.54 6.44-7A5.44 5.44 
+            0 0 0 20 4.77 5.07 5.07 
+            0 0 0 19.91 1S18.73.65 
+            16 2.48a13.38 13.38 
+            0 0 0-7 0C6.27.65 
+            5.09 1 5.09 1A5.07 
+            5.07 0 0 0 5 4.77a5.44 
+            5.44 0 0 0-1.5 3.78c0 
+            5.42 3.3 6.61 6.44 
+            7A3.37 3.37 0 0 0 9 
+            18.13V22" />
+                                </svg>
+                            </a>
+
+                            <!-- LinkedIn -->
+                            <a href="https://www.linkedin.com/in/muhammad-hamza-16b6353b1" class="social-icon-premium"
+                                target="_blank" rel="noopener">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 
+            0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 
+            6 0 0 1 6-6z" />
+                                    <rect x="2" y="9" width="4" height="12" />
+                                    <circle cx="4" cy="4" r="2" />
+                                </svg>
+                            </a>
+
+                            <!-- X -->
+                            <a href="https://x.com/MHamzawebdev" class="social-icon-premium" target="_blank"
+                                rel="noopener">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 
+            4.48 4.48 0 0 0-7.86 3v1A10.66 
+            10.66 0 0 1 3 4s-4 9 5 13a11.64 
+            11.64 0 0 1-7 2c9 5 20 0 
+            20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 
+            7.72 0 0 0 23 3z" />
+                                </svg>
+                            </a>
+
+                            <!-- Fiverr -->
+                            <a href="https://www.fiverr.com/s/Eg7pXB9" class="social-icon-premium" target="_blank"
+                                rel="noopener">
+                                <!-- Simple Fiverr Icon (Text Based Clean Version) -->
+                                <span style="font-weight:bold; font-size:18px;">fi</span>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="contact-right-premium">
+                        <div class="form-wrapper-premium">
+                            <!-- BACKEND INTEGRATION - Web3Forms -->
+                            <form action="https://api.web3forms.com/submit" method="POST" id="contact-form-premium"
+                                class="premium-form">
+                                <!-- Get your free access key from https://web3forms.com -->
+                                <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY_HERE">
+
+                                <!-- Additional hidden fields -->
+                                <input type="hidden" name="subject" value="New Portfolio Contact - Muhammad Hamza">
+                                <input type="hidden" name="from_name" value="Portfolio Contact Form">
+                                <input type="hidden" name="redirect" value="https://yourwebsite.com/thank-you.html">
+
+                                <!-- Honeypot spam protection -->
+                                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                                <div class="form-row">
+                                    <div class="form-group-premium">
+                                        <label for="name-premium">Full Name *</label>
+                                        <input type="text" id="name-premium" name="name" placeholder="John Doe"
+                                            required>
+                                        <span class="error-text"></span>
+                                    </div>
+                                    <div class="form-group-premium">
+                                        <label for="email-premium">Email Address *</label>
+                                        <input type="email" id="email-premium" name="email"
+                                            placeholder="john@example.com" required>
+                                        <span class="error-text"></span>
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group-premium">
+                                        <label for="phone-premium">Phone Number</label>
+                                        <input type="tel" id="phone-premium" name="phone" placeholder="+92 XXX XXXXXXX">
+                                    </div>
+                                    <div class="form-group-premium">
+                                        <label for="budget-premium">Project Budget</label>
+                                        <select id="budget-premium" name="budget">
+                                            <option value="">Select Range</option>
+                                            <option value="< $500">
+                                                < $500</option>
+                                            <option value="$5,00 - $1,000">$500 - $1000</option>
+                                            <option value="$1,000 - $5,000">$1,000 - $5,000</option>
+                                            <option value="$5,000+">$5,000+</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form-group-premium">
+                                    <label for="subject-premium">Subject *</label>
+                                    <input type="text" id="subject-premium" name="custom_subject"
+                                        placeholder="I'd like to discuss a project..." required>
+                                    <span class="error-text"></span>
+                                </div>
+
+                                <div class="form-group-premium">
+                                    <label for="message-premium">Message *</label>
+                                    <textarea id="message-premium" name="message" rows="5"
+                                        placeholder="Tell me about your project, timeline, and requirements..."
+                                        required></textarea>
+                                    <span class="error-text"></span>
+                                </div>
+
+                                <button type="submit" class="submit-btn-premium">
+                                    <span class="btn-content">
+                                        <svg class="btn-icon send" width="20" height="20" viewBox="0 0 24 24"
+                                            fill="none" stroke="currentColor" stroke-width="2">
+                                            <line x1="22" y1="2" x2="11" y2="13" />
+                                            <polygon points="22 2 15 22 11 13 2 9 22 2" />
+                                        </svg>
+                                        <svg class="btn-icon loading" width="20" height="20" viewBox="0 0 24 24"
+                                            fill="none" stroke="currentColor" stroke-width="2">
+                                            <line x1="12" y1="2" x2="12" y2="6" />
+                                            <line x1="12" y1="18" x2="12" y2="22" />
+                                            <line x1="4.93" y1="4.93" x2="7.76" y2="7.76" />
+                                            <line x1="16.24" y1="16.24" x2="19.07" y2="19.07" />
+                                            <line x1="2" y1="12" x2="6" y2="12" />
+                                            <line x1="18" y1="12" x2="22" y2="12" />
+                                            <line x1="4.93" y1="19.07" x2="7.76" y2="16.24" />
+                                            <line x1="16.24" y1="7.76" x2="19.07" y2="4.93" />
+                                        </svg>
+                                        <span class="btn-text">Send Message</span>
+                                    </span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </main>
+
+    <!-- Premium Footer -->
+    <footer class="footer-premium">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-col">
+                    <div class="footer-brand">
+                        <h3>Muhammad Hamza</h3>
+                        <p>Full Stack Developer & ERP Specialist</p>
+                    </div>
+                    <p class="footer-description">
+                        Transforming ideas into elegant digital solutions. Specialized in modern web
+                        development and enterprise systems.
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#projects">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#services">Web Development</a></li>
+                        <li><a href="#services">ERP Solutions</a></li>
+                        <li><a href="#services">UI/UX Design</a></li>
+                        <li><a href="#services">Consultation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Education</h4>
+                    <div class="education-box">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                            <path d="M6 12v5c3 3 9 3 12 0v-5" />
+                        </svg>
+                        <div>
+                            <strong>Superior University</strong>
+                            <p>Computer Science</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© <span id="footer-year"></span> Muhammad Hamza.
+                </p>
+                <div class="footer-badge-group">
+                    <span>Proudly associated with</span>
+                    <span class="university-badge">Superior University</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Project Modal -->
+    <div class="modal-premium" id="project-modal-premium">
+        <div class="modal-backdrop"></div>
+        <div class="modal-dialog">
+            <button class="modal-close-btn" id="modal-close-premium">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18" />
+                    <line x1="6" y1="6" x2="18" y2="18" />
+                </svg>
+            </button>
+            <div class="modal-image-section">
+                <img id="modal-img-premium" src="" alt="Project">
+            </div>
+            <div class="modal-content-section">
+                <div class="modal-meta">
+                    <span class="modal-category" id="modal-cat-premium"></span>
+                    <span class="modal-year">2024</span>
+                </div>
+                <h2 id="modal-title-premium"></h2>
+                <p id="modal-desc-premium"></p>
+                <div class="modal-tech">
+                    <h4>Tech Stack</h4>
+                    <div class="modal-tech-list" id="modal-tech-premium"></div>
+                </div>
+                <div class="modal-actions">
+                    <a href="#" class="modal-btn-primary">
+                        <span>Live Preview</span>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                            <polyline points="15 3 21 3 21 9" />
+                            <line x1="10" y1="14" x2="21" y2="3" />
+                        </svg>
+                    </a>
+                    <a href="#" class="modal-btn-seondary">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path
+                                d="M9 19c-5 1.5-5-25-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                        </svg>
+                        <span>View Code</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top -->
+    <button class="back-to-top-premium" id="back-totop-premium" aria-label="Back to top">
+        <svg width="20" height="20" viewBox="0 0 2424" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18 15 12 9 6 15" />
+        </svg>
+    </button>
+
+    <script src="script.js"></script>
+        <script>
+        // Force download CV with JavaScript
+        document.addEventListener('DOMContentLoaded', function() {
+            const downloadBtn = document.getElementById('download-cv');
+            
+            if (downloadBtn) {
+                downloadBtn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    // Create a sample PDF content (simple text)
+                    // Since we don't have an actual PDF file, let's create one dynamically
+                    const content = `MUHAMMAD HAMZA - FULL STACK DEVELOPER
+
+CONTACT:
+Email: muhammadhamzaxyz5676@example.com
+Phone: +92 3076721558
+Location: Faisalabad, Pakistan
+
+PROFESSIONAL SUMMARY:
+Passionate Full Stack Developer with strong knowledge of HTML, CSS, JavaScript, 
+and modern web technologies. Skilled in building responsive and user-friendly 
+web applications using both frontend and backend technologies.
+
+WORK EXPERIENCE:
+
+Full Stack Developer Intern – Tech Solutions Pvt Ltd, Pakistan | Jan 2025 – Present
+• Developed responsive web applications using HTML, CSS, JavaScript, and React.js
+• Implemented backend functionality using Node.js and Express
+• Built and maintained RESTful APIs
+• Worked on database integration with MongoDB
+
+Full Stack Developer Trainee – Innovate Web Solutions, Pakistan | Jun 2024 – Dec 2024
+• Built responsive web applications using HTML, CSS, JavaScript, and Node.js/Express
+• Integrated applications with MongoDB
+• Ensured responsive design across all devices
+
+EDUCATION:
+Superior University, Faisalabad
+Computer Science
+
+TECHNICAL SKILLS:
+• Frontend: HTML5, CSS3, JavaScript, React.js
+• Backend: Node.js, Express, Python, C#
+• Databases: MongoDB, SQL
+• ERP Systems: ERPNext, BlueSeer
+• Tools: Git, GitHub`;
+
+                    // Create a blob with the content
+                    const blob = new Blob([content], { type: 'application/pdf' });
+                    
+                    // Create a download link
+                    const url = window.URL.createObjectURL(blob);
+                    const link = document.createElement('a');
+                    link.href = url;
+                    link.download = 'Muhammad_Hamza_CV.pdf';
+                    
+                    // Trigger download
+                    document.body.appendChild(link);
+                    link.click();
+                    
+                    // Clean up
+                    document.body.removeChild(link);
+                    window.URL.revokeObjectURL(url);
+                    
+                    // Show success message
+                    alert('CV downloaded successfully!');
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>
